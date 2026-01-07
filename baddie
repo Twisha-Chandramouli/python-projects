@@ -1,0 +1,41 @@
+import turtle
+
+pen = turtle.Turtle()
+paper = turtle.Screen()
+
+pen.color("navy blue")
+pen.pensize(5)
+pen.speed(45)
+# inserting functions
+def triangle(x,y,clr):
+
+ pen.fillcolor(clr)
+ pen.begin_fill()
+ pen.right(65)
+ pen.forward(100)
+ pen.right(115)
+ pen.forward(80)
+ pen.right(113)
+ pen.forward(100)
+ pen.end_fill()
+ 
+triangle(90,60,"lightslate blue")
+triangle(-45,40,"light slate blue")
+triangle(22.5,20,"lightslate blue")
+triangle(11,10,"lightslate blue")
+triangle(5.5,5,"lightslate blue")
+
+pen.up()
+pen.goto(0,-100)
+pen.down()
+pen.left(-39)
+pen.forward(150)
+pen.up()
+pen.goto(45,15)
+pen.down()
+
+pen.color("yellow")
+pen.write("twisha",align="left",font=("Comic Sans", 30, "normal"))
+print("twisha")
+pen.hideturtle()
+turtle.done()
